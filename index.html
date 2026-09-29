@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#e94b24" />
+    <meta name="description" content="Tasty — street food made fresh." />
+    <title>Tasty — Food, made fresh</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;0,800;1,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar wrap">
+      <a class="brand" href="#top" aria-label="Tasty home">
+        <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true"><path d="M12 14h24l-2 24H14z" fill="currentColor"/><path d="M18 14V9m12 5V9M11 19h26" fill="none" stroke="#fff6e8" stroke-width="3" stroke-linecap="round"/><path d="M19 27c3 4 7 4 10 0" fill="none" stroke="#fff6e8" stroke-width="3" stroke-linecap="round"/></svg>
+        <span>Tasty</span>
+      </a>
+      <nav aria-label="Main navigation"><a href="#menu">Menu</a><a href="#why">About us</a></nav>
+      <button class="cart-button" id="cart-button" type="button" aria-label="View cart"><span aria-hidden="true">🛍️</span><b id="cart-count">0</b></button>
+    </header>
+
+    <main id="top">
+      <section class="hero wrap">
+        <div class="hero-copy"><p class="eyebrow">Kahalgaon’s favourite food corner</p><h1>Good food.<br /><em>Good mood.</em></h1><p class="hero-text">A bright little break in your day: hot momos, saucy noodles and seriously loaded burgers, made to order.</p><a class="button button-primary" href="#menu">Explore the menu <span>→</span></a><div class="hero-note"><span class="avatar-stack"><i>🍜</i><i>🍔</i><i>🥟</i></span><span><strong>4.9 / 5</strong><br />from hungry locals</span></div></div>
+        <div class="hero-art" aria-label="A delicious burger with fries" role="img"><div class="sun">fresh<br/>every day</div><div class="doodle d1">✦</div><div class="doodle d2">♥</div><div class="food-emoji">🍔</div><div class="fries">🍟</div><p>made with<br/><b>extra joy</b></p></div>
+      </section>
+
+      <section class="category-section wrap" aria-labelledby="category-title"><div class="section-heading"><p class="eyebrow">Pick your craving</p><h2 id="category-title">What sounds good?</h2></div><div class="categories" id="categories"></div></section>
+
+      <section class="menu-section" id="menu"><div class="wrap"><div class="section-heading inline-heading"><div><p class="eyebrow">Today’s menu</p><h2>Made for a tasty moment.</h2></div><a href="#comparison" class="text-link">Compare favourites →</a></div><div class="food-grid" id="food-grid"></div></div></section>
+
+      <section class="why wrap" id="why"><div class="why-copy"><p class="eyebrow">Why Tasty?</p><h2>It’s the little things.</h2><p>We prepare every plate fresh, use ingredients we would serve our own friends, and make sure there is always enough sauce.</p><ul><li><span>✦</span> Freshly prepared when you order</li><li><span>✦</span> Value that tastes brilliant</li><li><span>✦</span> A friendly corner for everyone</li></ul></div><aside class="review-card"><span class="quote">“</span><p>Best momos in town, and the chilli noodles are a must. It feels like a happy place!</p><footer><span class="review-avatar">S</span><div><b>Sneha Kumari</b><small>Regular at Tasty</small></div><strong>★★★★★</strong></footer></aside></section>
+
+      <section class="comparison wrap" id="comparison" aria-labelledby="comparison-title"><div class="section-heading"><p class="eyebrow">Choose your favourite</p><h2 id="comparison-title">Compare the classics.</h2><p class="scroll-hint">Swipe the table to see more <span>→</span></p></div><div class="table-scroll" tabindex="0"><table><thead><tr><th scope="col">Made for</th><th scope="col">Veg Momos</th><th scope="col">Chicken Burger</th><th scope="col">Chilli Noodles</th></tr></thead><tbody id="comparison-body"></tbody></table></div></section>
+    </main>
+
+    <aside class="cart-drawer" id="cart-drawer" aria-label="Your cart" aria-hidden="true"><div class="drawer-head"><h2>Your order</h2><button id="close-cart" aria-label="Close cart">×</button></div><div id="cart-items" class="cart-items"><p class="empty-cart">Your cart is waiting for something delicious.</p></div><div class="cart-footer"><div><span>Total</span><strong id="cart-total">₹0</strong></div><button class="button button-primary" id="checkout" type="button">Place order →</button><p class="order-status" id="order-status" role="status"></p></div></aside><div class="backdrop" id="backdrop"></div>
+    <footer class="site-footer"><div class="wrap"><a class="brand" href="#top"><svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true"><path d="M12 14h24l-2 24H14z" fill="currentColor"/><path d="M18 14V9m12 5V9M11 19h26" fill="none" stroke="#fff6e8" stroke-width="3" stroke-linecap="round"/></svg><span>Tasty</span></a><p>Food made with a smile · Kahalgaon</p></div></footer>
+    <script type="module" src="src/main.js"></script>
+  </body>
+</html>
